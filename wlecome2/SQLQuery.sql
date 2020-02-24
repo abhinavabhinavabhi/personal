@@ -1,0 +1,1 @@
+﻿select TOP 1 * from [transaction] order by trn_id desc ;
