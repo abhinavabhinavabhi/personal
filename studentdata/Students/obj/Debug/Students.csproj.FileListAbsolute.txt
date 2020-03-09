@@ -1,0 +1,12 @@
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\Students.dll.config
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\Students.dll
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\Students.pdb
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\EntityFramework.dll
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\EntityFramework.xml
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\obj\Debug\Students.csprojAssemblyReference.cache
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\obj\Debug\Students.csproj.CoreCompileInputs.cache
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\obj\Debug\Students.csproj.CopyComplete
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\obj\Debug\Students.dll
+C:\Users\abhinav\Desktop\IP\04-03-2020\04-03-2020(asp web api)\studentdata\Students\obj\Debug\Students.pdb
