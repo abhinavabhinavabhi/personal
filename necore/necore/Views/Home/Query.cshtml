@@ -1,0 +1,41 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model necore.model.login
+<html>
+<head>
+    <script>
+        function query() {
+            var a = document.getElementById("id").value;
+            var b = document.getElementById("name").value;
+            $.get("/home/Query?" + a + "&" + b);
+        }
+    </script>
+    <title>
+        Query selector
+    </title>
+</head>
+<body>
+    <form asp-action="Query" asp-controller="home" method="GET" >
+        <table>
+            <tr>
+                <td>
+                    <label for="id">Id</label>
+                </td>
+                <td>
+                    <input type="text" asp-for="id" id="id" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pass"> password</label>
+                </td>
+                <td>
+                    <input type="password" id="pass" asp-for="Password" />
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+    <p>@ViewBag.id</p>
+    <p>@ViewBag.name</p>
+</body>
+</html>

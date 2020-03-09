@@ -1,0 +1,60 @@
+﻿@model necore.model.student
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+<head>
+    <script src="~/jquery/jquery.js"></script>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $("#content").hide();
+
+
+            $("#load").click(function () {
+
+                var id = $("#idd").val();
+                if (id != 0) {
+                    var urloc = "http://localhost:63314/api/Student/" + id;
+                    $.ajax({
+                        type: "GET",
+                        url: urloc,
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data);
+                            $("#verify").hide();
+                            $("#content").show();
+                            $("#name").val(data.name);
+                            $("#loc").val(data.location)
+                            $("#city").val(data.city);
+                            $("#salary").val(data.salary);
+                            //$.each(data, function (index, val) {
+                            //
+                            //});
+
+
+                        },
+                    });
+                };
+            });
+        });
+    </script>
+    <title>
+        Update
+    </title>
+</head>
+<body>
+    <form asp-action="Update" asp-controller="Home" method="post">
+        <div class="container-fluid align-content-center" id="verify">
+            Id  <input type="number" class="form-control" id="idd" asp-for="id" />
+            <input type="button" value="Load" id="load" class="btn-danger" />
+        </div>
+        <div class="container-fluid align-content-center" id="content">
+            Name  <input type="text" class="form-control" id="name" asp-for="name" />
+            Loaction   <input type="text" class="form-control" id="loc" asp-for="location" />
+            City   <input type="text" class="form-control" id="city" asp-for="city" />
+            Salary   <input type="number" class="form-control" id="salary" asp-for="salary" />
+            <input type="submit" value="UPDATE" class="btn-primary"  />
+        </div>
+    </form>
+
+</body>
+</html>

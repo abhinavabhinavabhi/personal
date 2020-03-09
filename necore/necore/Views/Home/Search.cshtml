@@ -1,0 +1,70 @@
+﻿@model necore.model.login
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="~/jquery/jquery.js"></script>
+    <script >
+        $(document).ready(function () {
+
+            $('#butt').click(function () {
+                var options = {};
+                options.url ="/home/Search";
+                options.type ="POST";
+                var obj = {};
+                obj.id = $("#idd").val();
+                obj.Password = $("#pass").val();
+                options.data = JSON.stringify(obj);
+                console.log(options.data);
+                options.contentType = "application/json";
+                options.dataType = "json";
+
+                options.beforeSend = function (xhr) {
+                    xhr.setRequestHeader("MY-XSRF-TOKEN", $('input:hidden[name="__RequestVerificationToken"]').val());
+                };
+                options.success = function (msg) {
+                    $("#label").html(msg);
+                };
+                options.error = function () {
+                    $("#label").html("Error while making Ajax call!");
+                };
+                $.ajax(options);
+            });
+        });
+
+
+    </script>
+    <title>
+
+    </title>
+</head>
+<body>
+
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="idd">Id</label>
+                    </td>
+                    <td>
+                        <input type="text" id="idd" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">pass</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" />
+                    </td>
+                </tr>
+            </table>
+            <input type="button" id="butt" value="Login" />
+            <p>@ViewBag.ErrorMessage</p>
+            <label id="label"></label>
+        </form>       
+    </div>
+</body>
+</html>

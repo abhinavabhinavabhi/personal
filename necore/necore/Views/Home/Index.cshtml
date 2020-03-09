@@ -1,0 +1,44 @@
+﻿@model IEnumerable<necore.model.student>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a asp-action="create" asp-controller="home" class="nav-link">Create</a></li>
+                <li class="nav-item"><a asp-action="Search" asp-controller="home" class="nav-link">Login</a></li>
+                <li class="nav-item"><a asp-action="Query" asp-controller="home" class="nav-link">Query Link</a></li>
+                <li class="nav-item"><a asp-action="Queryjson" asp-controller="home" class="nav-link">Json </a></li>
+                <li class="nav-item"><a asp-action="Username" asp-controller="home" class="nav-link">User Login</a></li>
+                <li class="nav-item"><a asp-action="Jquery" asp-controller="home" class="nav-link"> Search</a></li>
+                <li class="nav-item"><a asp-action="Update" asp-controller="home" class="nav-link"> UPDATE</a></li>
+            </ul>
+        </nav>
+
+        @foreach (var stu in Model)
+        {
+
+            <div class="card m-3">
+                <div class="card-header"> Name :@stu.name</div>
+                <div class="card-body">
+                    <div>Id:  @stu.id</div>
+                    <div>Location:@stu.location</div>
+                    <div> city: @stu.city</div>
+                    <div>Salary:@stu.salary</div>
+                </div>
+                <div class="card-footer">
+                    <a asp-controller="home" asp-action="details" asp-route-id="@stu.id" class="btn-primary">Show</a>
+
+                </div>
+            </div>
+
+        }
+    </div>
+
+</body>
+</html>

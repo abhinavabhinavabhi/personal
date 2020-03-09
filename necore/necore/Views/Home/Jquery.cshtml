@@ -1,0 +1,64 @@
+﻿@model IEnumerable<necore.model.student>
+<html>
+<head>
+
+    <script src="~/jquery/jquery.js"></script>
+    <script>
+        $(document).load(function () {
+            $("#button").click(function () {
+                var name = $("#text").val();
+                //$.post("/home/Jquery?name=" + name);
+                $("#form1").submit();
+            });
+        });
+    </script>
+    <title>
+        Jquery login
+    </title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Jquery", "Home", FormMethod.Post))
+        {
+            @*@Html.TextBox("name")*@
+            <label for="name">Enter name </label>
+            <input type="text" id="name" name="name" placeholder="enter name" />
+            <button id="button">Submit</button>
+        }
+
+
+
+
+
+        @ViewBag.mess
+
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Location
+                </th>
+                <th>City</th>
+            </tr>
+            @if (Model != null)
+            {
+                foreach (var stud in Model)
+                {
+                    <tr>
+                        <td> @stud.name</td>
+
+                        <td> @stud.location</td>
+
+                        <td> @stud.city</td>
+                    </tr>
+                }
+            }
+
+        </table>
+    </div>
+</body>
+</html>

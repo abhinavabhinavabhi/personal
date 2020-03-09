@@ -1,0 +1,56 @@
+﻿@model necore.model.login
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/jquery/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnshow").click(function () {
+                $.ajax({
+                    type: "GET",
+                    url: "http://localhost:63314/api/Student",
+                    dataType: "json",
+                    success: function (data) {
+                        $("#tableshow td").parent().remove();
+                        $.each(data, function (index, val) {
+                            $("#tableshow").append("<tr><td>" + val.name + "</td> <td>" + val.salary + "</td> <td>" + val.location + "</td> </tr>")
+                        });
+                    }
+
+                });
+            });
+        });
+
+
+    </script>
+    <title>
+
+    </title>
+</head>
+<body>
+
+    <div class="container-fluid align-content-center">
+        <div class="container-fluid">
+            <label for="" class="col-form-label-lg">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter Name " id="textinp" />
+        </div>
+        <br />
+        <div class=" container-fluid">
+            <input type="button" class="btn-primary" value="Submit" id="btnsearch" />
+            <input type="button" class="btn-success" value="Show All" id="btnshow" />
+        </div> 
+        <div>
+            <table class="table" id="tableshow">
+                <tr>
+                    <th> Name</th>
+                    <th>Salary</th>
+                    <th>Location</th>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>

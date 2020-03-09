@@ -1,0 +1,68 @@
+﻿@model necore.model.student
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewBag.title = "Create studnt";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <center>
+        <h3>Create </h3>
+        <div class="container-fluid">
+            <form asp-controller="home" asp-action="Create" method="post">
+                <table>
+
+
+                    <tr>
+                        <td>
+                            <label asp-for="name">name</label>
+                        </td>
+                        <td>
+                            <input asp-for="name" class="form-control" />
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label asp-for="location">Location</label>
+                        </td>
+                        <td>
+                            <input asp-for="location" class="form-control"/>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label asp-for="city">City</label>
+                        </td>
+                        <td>
+                            <input asp-for="city" class="form-control"/>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label asp-for="salary">Salary</label>
+                        </td>
+                        <td>
+                            <input asp-for="salary" class="form-control" />
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <br />
+                    @ViewBag.mess
+                    <button type="submit" class="btn-dark">Create</button>
+                </div>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,25 +1,29 @@
 ﻿@model necore.model.student
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <title>Data</title>
 </head>
 <body>
-    <h3>@ViewBag.desc</h3>
-   
-    <div>
-        Id:@Model.id
-    </div>
-    <div>
-        Name:@Model.name
-    </div>
-    <div>
-        Location:@Model.location
-    </div>
-    <div>
-        City:@Model.city
-    </div>
-    <div>
-        Salary:@Model.salary
+    <div class="container-fluid">
+        <div class="card m-3">
+            <h3>@ViewBag.desc</h3>
+            <div class="card-header">
+                Name:@Model.name
+            </div>
+            <div>
+                Id:@Model.id 
+            </div>
+            <div>
+                Location:@Model.location
+            </div>
+            <div>
+                City:@Model.city
+            </div>
+            <div>
+                Salary:@Model.salary
+            </div>
+        </div>
     </div>
 </body>
 </html>

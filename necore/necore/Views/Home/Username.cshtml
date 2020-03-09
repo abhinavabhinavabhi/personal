@@ -1,0 +1,27 @@
+﻿@model necore.model.UserLogin
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>
+        Username
+    </title>
+</head>
+<body>
+    <form asp-action="Username" asp-controller="home" method="post">
+        <div class="container-fluid" style="margin-top:15%;">
+            <div style="margin:auto;width:40%;">
+                <label for="Username">Username:</label>
+                <input type="text" asp-for="Username" class="form-control" placeholder="Username" />
+            </div>
+            <br />
+            <center>
+                <div>
+                    <input type="submit" class="btn btn-info" value="Submit" />
+                </div>
+                @ViewBag.error
+            </center>
+        </div>
+    </form>
+</body>
+</html>
