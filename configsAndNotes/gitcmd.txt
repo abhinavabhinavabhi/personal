@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.18362.592]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html>git clone https://github.com/bizruntime-interns/Abhinav-Rajiv.git
+Cloning into 'Abhinav-Rajiv'...
+remote: Enumerating objects: 233, done.
+remote: Counting objects: 100% (233/233), done.
+remote: Compressing objects: 100% (87/87), done.
+Receiving oal 233 (delta 88), reused 213 (delta 81), pack-reused 0Receiving objects:  79% (185/233)
+Receiving objects: 100% (233/233), 194.08 KiB | 615.00 KiB/s, done.
+Resolving deltas: 100% (88/88), done.
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html>cd Abhinav-Rajiv
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        html.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git branch
+* master
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/c#
+  remotes/origin/html
+  remotes/origin/javascript
+  remotes/origin/master
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git checkout html --
+Switched to a new branch 'html'
+Branch 'html' set up to track remote branch 'html' from 'origin'.
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git branch
+* html
+  master
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git add html.txt
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git commit -m"uploaded"
+[html bcd1dda] uploaded
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 html.txt
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>git push origin html
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 265 bytes | 132.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/bizruntime-interns/Abhinav-Rajiv.git
+   47a5c80..bcd1dda  html -> html
+
+C:\Users\abhinav\Desktop\IP\test\Abhinav-Rajiv\html\Abhinav-Rajiv>

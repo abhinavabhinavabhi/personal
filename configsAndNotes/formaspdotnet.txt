@@ -1,0 +1,27 @@
+ <form asp-action="Search" asp-controller="home" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label asp-for="id">Id</label>
+                    </td>
+                    <td>
+                        <input asp-for="id"  id="idd"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Password">pass</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" asp-for="Password" />
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="butt">Login</button>
+
+            <label id="label"></label>
+        </form>
+
+        <p>@ViewBag.ErrorMessage</p>
+    </div>
+</body>

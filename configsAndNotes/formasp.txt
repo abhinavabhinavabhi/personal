@@ -1,0 +1,148 @@
+ <form asp-action="Search" asp-controller="home" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label asp-for="id">Id</label>
+                    </td>
+                    <td>
+                        <input asp-for="id"  id="idd"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label asp-for="Password">pass</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pass" asp-for="Password" />
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" id="butt">Login</button>
+
+            <label id="label"></label>
+        </form>
+
+        <p>@ViewBag.ErrorMessage</p>
+    </div>
+</body>
+
+
+
+
+ <form asp-action="Search" asp-controller="home" method="post">
+            <input type="text" id="idd" />
+            <input type="password" id="pass" />
+            <input type="button" id="butt" value="Login Ajax" />
+            <p>@ViewBag.ErrorMessage</p>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+ var student = {
+                    id: a,
+                    password: b
+                }
+                alert(a);
+                alert("{login:" + json.stringify(student) + "}");
+                $.ajax({
+
+                    type: 'post',
+                    contenttype: "application/json; charset=utf-8",
+                    data: json.stringify("{login:" + json.stringify(student) + "}") ,
+                    url: '/home/search',
+
+                    success: function (response) {
+                        $('#label').html(response);
+                    }
+
+
+
+
+
+
+
+ <script type="text/javascript">
+        $(document).ready(function () {
+            $('#butt').click(function () {
+                var a = $("idd").val();
+                var b = $("pass").val();
+                alert(a, b);
+                var student = {
+                    id: a,
+                    Password: b
+                }
+
+                $.ajax({
+
+                    type: 'POST',
+                    contentType: "application/Json; charset=UTF-8",
+                    data: "{ login :" + JSON.stringify(student) + "}",
+                    url: '/home/Search',
+
+                    success: function (data) {
+                        $('#label').html(data);
+                    }
+
+
+                });
+            });
+        });
+
+
+    </script>
+
+services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+
+
+
+http://binaryintellect.net/articles/16ecfe49-98df-4305-b53f-2438d836f0d0.aspx
+
+
+
+
+
+
+
+
+ $.ajax({
+
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    data:JSON.stringify(da),
+                    url: '/home/Search',
+                    
+                    success: function (data) {
+                        $('#label').html(data);
+                    },
+                    dataType: "json"
+
+
+                });
+
+
+
+
+
+
+ var a = $("#idd").val();
+                var b = $("#pass").val();
+
+                var student = {
+                    id: a,
+                    Password: b
+                }
+                var da = { login: { id: a, Password: b } }
+                alert(da);
+
+
+
+
+ asp-action="Search" asp-controller="home" method="post"
