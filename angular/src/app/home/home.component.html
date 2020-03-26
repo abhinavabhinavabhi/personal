@@ -1,0 +1,18 @@
+
+    <div *ngIf=" stu$ | async as student">
+      <!-- <div *ngIf=" stu as student"> -->
+      <div>
+        {{datenow | date: 'MMM dd yyyy'}}
+      </div>
+  
+      <app-course *ngFor="let stud of student; index as i" [stud]="stud" [ind]="i+1" (studentemitter)="emmitedvalue($event)"></app-course>
+      <!-- <app-course [stud]="stu2"></app-course>
+    <app-course [stud]="stu3"></app-course>
+    <app-course [stud]="stu4"></app-course> -->
+  
+  
+      <input type="text" (keyup)="onkey(name.value)" [placeholder]="data.title+' Change heading.'" #name />
+      <button (click)="alert()"> Submit</button>
+      
+  
+    </div>

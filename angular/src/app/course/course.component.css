@@ -1,0 +1,58 @@
+.details{
+text-align: center;
+align-items: center;
+margin: auto;
+
+}
+.coursediv{
+    text-align: center;
+    text-shadow: slategrey;
+    align-content: center;
+    margin: auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    align-items: center;
+    text-align: center;
+    display: block;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: cadetblue;
+}
+.coursediv.less{
+    background-color: rgb(241, 71, 71);
+    border: 3px solid cyan;
+}
+
+.coursediv.dist{
+    background-color: lightgreen;
+    border: 3px solid cyan;
+    
+
+}
+.contentBody
+{
+    padding: 70px;
+    font-size: 20px;
+    height: auto;
+    position: relative;
+    margin:0 auto ;
+    text-align: center;
+    align-content: center;
+   
+
+}
+
+.content{
+    align-items: center;
+    font-size: 12;
+    text-align: center;  
+}
+
+.failedText
+{
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
