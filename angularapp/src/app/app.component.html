@@ -1,0 +1,41 @@
+<mat-sidenav-container color="white" fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item routerLink="home" (click)="sidenav.close()">
+        <!-- <mat-icon>libray-books</mat-icon> -->
+        <span>Home</span>
+      </a>
+      <a mat-list-item routerLink="about" (click)="sidenav.close()">
+        <!-- <mat-icon>person-add</mat-icon> -->
+        <span>About</span>
+      </a>
+      <a mat-list-item routerLink="table" (click)="sidenav.close()">
+        <!-- <mat-icon>person-add</mat-icon> -->
+        <span>Table</span>
+      </a>
+      <a mat-list-item routerLink="edit" (click)="sidenav.close()">
+        <!-- <mat-icon>person-add</mat-icon> -->
+        <span>Edit</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.open()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+
+
+
+<!-- <app-top-menu></app-top-menu>
+<div class="container-fluid body">
+  <div class="heading">
+    <h2> Welcome {{data.title}}</h2>
+
+  </div>
+  <router-outlet></router-outlet>
+</div> -->

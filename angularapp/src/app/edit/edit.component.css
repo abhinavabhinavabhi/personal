@@ -1,0 +1,13 @@
+.mat-card{
+  height: 300px;
+  width: 80%;
+  color: black;
+  border: 3px solid teal;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  font-size: medium;
+  font-family: 'Courier New', Courier, monospace;
+}

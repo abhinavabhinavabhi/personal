@@ -1,0 +1,21 @@
+<mat-table [dataSource]="datasc" class="mat-elevation-z8">
+  <ng-container matColumnDef="sino">
+    <mat-header-cell *matHeaderCellDef>sino</mat-header-cell>
+    <mat-cell *matCellDef=" let student">{{student.id}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef>sino</mat-header-cell>
+    <mat-cell *matCellDef=" let student">{{student.name}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="location">
+    <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+    <mat-cell *matCellDef="let student">{{student.location}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="salary">
+    <mat-header-cell *matHeaderCellDef>salary</mat-header-cell>
+    <mat-cell *matCellDef="let student">{{student.salary}}</mat-cell>
+  </ng-container>
+  <mat-header-row *matHeaderRowDef="displayedcols"></mat-header-row>
+  <mat-row *matRowDef="let row;columns:displayedcols" [ngClass]="{hovered: row.hovered, highlighted: row.highlighted}" (click)="selected(row)" ></mat-row>
+
+</mat-table>

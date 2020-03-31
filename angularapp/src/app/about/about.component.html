@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <h2>Students</h2>
+    <div class="coursepanel">
+
+        <mat-tab-group>
+
+            <mat-tab label="Less Amount">
+                <div *ngIf="lessAmound$ | async as lessAmound">
+                    <app-course *ngFor="let student of lessAmound;index as i" [stud]="student" [ind]="i+1" (studentemitter)="emmitedvalue($event)"></app-course>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="Normal Balance">
+                <div *ngIf="mediumamd$ | async as lessAmound">
+                    <app-course *ngFor="let student of lessAmound;index as i" [stud]="student" [ind]="i+1" (studentemitter)="emmitedvalue($event)"></app-course>
+                </div>
+            </mat-tab>
+
+            <mat-tab label="High Balance">
+                <div *ngIf="largeamd$ | async as large">
+                    <app-course *ngFor="let large of large;index as i" [stud]="large" [ind]="i+1" (studentemitter)="emmitedvalue($event)"></app-course>
+                </div>
+
+            </mat-tab>
+
+
+        </mat-tab-group>
+    </div>
+</div>

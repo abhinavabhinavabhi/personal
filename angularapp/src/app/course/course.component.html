@@ -1,0 +1,51 @@
+<div class="details" id="clicked">
+    <div class="coursediv" [ngClass]="less()">
+        <div class="contentBody">
+            {{ind}}
+            <!-- <p *ngIf="stud.id!=null"></p> -->
+            <!-- <ng-template #idnotav>
+                <p>
+                    Id not available
+                </p>
+            </ng-template> -->
+            <div class="content">
+                <p>id : {{stud.id}}
+                    <br>
+                    name: {{stud.name}}<br>
+                    dept: {{stud.location}}<br>
+                    Balance: {{stud.salary}}<br>
+                    City: {{stud.city}}
+                    <br>
+                    <input type="number" placeholder="salary edit" value="stud.salary" #salaryedit />
+                </p>
+                <div>
+                    <button mat-raised-button  (click)="select()" #selevtedbutt>select</button>
+                </div>
+                <div class="failedText" *ngIf="stud.salary <1000">
+
+                    Balance is less
+
+                </div>
+
+                <!-- 
+                    ..............switch case............
+                    <div class="result" [ngSwitch]="stud.marks">
+                    <div *ngSwitchCase="'6.5'">
+                        not pass
+                    </div>
+                    <div *ngSwitchCase="lessThanSix()">
+                        not pass
+                    </div>
+    
+                </div> -->
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <br>
+
+</div>
