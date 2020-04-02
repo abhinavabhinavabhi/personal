@@ -1,0 +1,7 @@
+<p>main works!</p>
+<div *ngIf="books$ | async as book">
+  <div *ngFor="let item of book">
+    {{item.name}}
+  </div>
+
+</div>
