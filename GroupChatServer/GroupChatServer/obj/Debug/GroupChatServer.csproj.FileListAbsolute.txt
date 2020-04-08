@@ -1,0 +1,7 @@
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\bin\Debug\GroupChatServer.exe.config
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\bin\Debug\GroupChatServer.exe
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\bin\Debug\GroupChatServer.pdb
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\obj\Debug\GroupChatServer.csprojAssemblyReference.cache
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\obj\Debug\GroupChatServer.csproj.CoreCompileInputs.cache
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\obj\Debug\GroupChatServer.exe
+C:\Users\abhinav\Desktop\personal\personal\personal\socket\GroupChatServer\GroupChatServer\obj\Debug\GroupChatServer.pdb
