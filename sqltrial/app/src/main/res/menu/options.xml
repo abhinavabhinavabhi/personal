@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/fragment"
+    android:title="Fragment"
+    android:icon="@drawable/ic_launcher_background">
+    <menu>
+        <item android:id="@+id/frag1"
+            android:title="Fragment1"
+            />
+        <item android:id="@+id/frag2"
+            android:title="Fragment 2"/>
+
+    </menu>
+
+</item>
+<item android:title="Home"
+    android:id="@+id/homeal"
+    />
+
+</menu>

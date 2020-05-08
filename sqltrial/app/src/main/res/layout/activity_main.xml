@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="332dp"
+        android:layout_marginRight="332dp"
+        android:layout_marginBottom="616dp"
+        android:text="name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="234dp"
+        android:layout_marginRight="234dp"
+        android:layout_marginBottom="438dp"
+        android:text="Time of delivery"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/timesel"
+        android:onClick="timeshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="426dp"
+        android:text="Select Time"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/datepic"
+        android:onClick="dateset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="524dp"
+        android:text="Date of Birth"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginRight="269dp"
+        android:layout_marginBottom="547dp"
+        android:text="Date of Birth"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="346dp"
+        android:layout_marginRight="346dp"
+        android:layout_marginBottom="488dp"
+        android:text="age"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:layout_marginBottom="485dp"
+
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="604dp"
+        android:hint="Name"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textSize="20dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="677dp"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="232dp"
+        android:hint="your details will show here"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+
+
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="89dp"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/addd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="362dp"
+        android:onClick="dataadd"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="294dp"
+        android:text="Show"
+        android:onClick="get"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

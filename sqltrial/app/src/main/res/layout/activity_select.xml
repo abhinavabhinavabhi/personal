@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".select">
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list1"
+        android:text="Google"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableBottom="@color/colorAccent"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/common_google_signin_btn_icon_dark_normal"
+        />
+
+
+    <CheckBox
+       android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Google Plus"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_plusone_standard_off_client"
+        android:padding="10dp"/>
+    <CheckBox
+        android:id="@+id/list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="other"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/common_google_signin_btn_text_light_normal_background"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textSize="20dp"
+        android:textColor="@color/common_google_signin_btn_text_light"/>
+
+
+
+</LinearLayout>

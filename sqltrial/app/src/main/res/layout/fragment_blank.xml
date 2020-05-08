@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frame1"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/frag1butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to next"
+        android:textSize="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="120dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag1spinner"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        />
+
+
+
+
+</FrameLayout>
